@@ -18,3 +18,14 @@ library(palmerpenguins)
 ```{r}
 summary(penguins)
 ```
+
+## A plot to show off some features
+
+```{r}
+ggplot(
+  data = penguins,
+  mapping = aes(x = bill_length_mm,
+                y = species)
+  )+ 
+  geom_boxplot()
+```
